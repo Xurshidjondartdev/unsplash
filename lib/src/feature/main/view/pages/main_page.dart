@@ -32,7 +32,7 @@ class MainPage extends ConsumerWidget {
               child: ListView.builder(
                 controller: ref.read(mainVM).scrollController,
                 itemCount: ref.read(mainVM).getAllImagesModel.length,
-                itemBuilder: (_,index){
+                itemBuilder: (_, index) {
                   return Card(
                     color: context.theme.colorScheme.surfaceContainerHighest,
                     child: SizedBox(
@@ -43,16 +43,27 @@ class MainPage extends ConsumerWidget {
                           Expanded(
                             flex: 4,
                             child: Image.network(
-                              ref.read(mainVM).getAllImagesModel[index].urls?.small??"https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg",
+                              ref.read(mainVM).getAllImagesModel[index].urls?.small ??
+                                  "https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg",
+                              fit: BoxFit.cover,
                             ),
+                          ),
+                          Expanded(
+                            flex: 1,
+                            child:
+                                Text(ref.read(mainVM).getAllImagesModel[index].altDescription ?? "No Name"),
                           ),
                         ],
                       ),
                     ),
-                  )
+                  );
                 },
               ),
-            )
+            ),
+            Visibility(
+              visible: ref.watch(mainVM).isLoading,
+              child: const CircularProgressIndicator(),
+            ),
           ],
         ),
       ),

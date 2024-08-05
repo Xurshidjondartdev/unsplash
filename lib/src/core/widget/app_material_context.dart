@@ -24,7 +24,7 @@ class AppMaterialContext extends StatelessWidget {
               if (InheritedRemoteNotifier.maybeOf(_)!.isBlocked) {
                 return const BlockPage();
               } else {
-                return MainPage();
+                return const MainPage();
               }
             },
           ),
