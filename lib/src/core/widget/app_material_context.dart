@@ -4,8 +4,10 @@ import 'package:unsplash/src/feature/setting/inherited_remote_notifier.dart';
 import 'package:unsplash/src/feature/setting/remote_controller.dart';
 
 import '../../feature/main/view/pages/main_page.dart';
+import '../../feature/setting/theme_controller.dart';
 
 final RemoteController remoteController = RemoteController();
+final ThemeController themeController = ThemeController();
 
 class AppMaterialContext extends StatelessWidget {
   const AppMaterialContext({super.key});
