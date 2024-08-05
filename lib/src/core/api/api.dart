@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'dart:convert';
 import 'package:http_interceptor/http/intercepted_http.dart';
 import 'api_constants.dart';

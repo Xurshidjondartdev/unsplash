@@ -57,7 +57,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCNh8g6Ho4w48r155hxti0cP602xF7xBZ8',
-    appId: '1:1003807121868:android:078c05530e05de48cdfd69',
+    appId: '1:1003807121868:android:68abafa19832fce2cdfd69',
     messagingSenderId: '1003807121868',
     projectId: 'unsplash-dc9c3',
     storageBucket: 'unsplash-dc9c3.appspot.com',
@@ -71,4 +71,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'unsplash-dc9c3.appspot.com',
     iosBundleId: 'com.example.unsplash',
   );
+
 }
