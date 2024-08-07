@@ -129,7 +129,8 @@ class RestaurantsPageState extends State<RestaurantsPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.circular(8),
+              borderRadius:
+                  const BorderRadius.only(topLeft: Radius.circular(14), topRight: Radius.circular(14)),
               child: Image.network(
                 imageUrl,
                 height: 100,
