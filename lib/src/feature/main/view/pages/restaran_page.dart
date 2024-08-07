@@ -133,14 +133,14 @@ class RestaurantsPageState extends State<RestaurantsPage> {
                   const BorderRadius.only(topLeft: Radius.circular(14), topRight: Radius.circular(14)),
               child: Image.network(
                 imageUrl,
-                height: 100,
+                height: 120,
                 width: double.infinity,
                 fit: BoxFit.cover,
               ),
             ),
             const SizedBox(height: 10),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.all(10),
               child: Column(
                 children: [
                   Text(
